@@ -4,9 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
-    mobileMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+    if(mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            // Animation for Hamburger bars (Optional visual flair)
+            const bars = document.querySelectorAll('.bar');
+            bars.forEach(bar => {
+                bar.style.backgroundColor = navLinks.classList.contains('active') 
+                    ? 'var(--neon-cyan)' 
+                    : 'var(--text-main)';
+            });
+        });
+    }
 
     // --- Template Filter System ---
     const filterButtons = document.querySelectorAll('.filter-btn');
@@ -22,13 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const filterValue = button.getAttribute('data-filter');
 
-            // 3. Show/Hide cards
+            // 3. Show/Hide cards with animation reset
             templateCards.forEach(card => {
                 const cardCategory = card.getAttribute('data-category');
 
                 if (filterValue === 'all' || filterValue === cardCategory) {
                     card.style.display = 'block';
-                    // Optional: Add simple fade-in animation logic here
+                    // Trigger a tiny fade in by manipulating opacity via CSS if desired
+                    // For now, block/none works instantly
                 } else {
                     card.style.display = 'none';
                 }
