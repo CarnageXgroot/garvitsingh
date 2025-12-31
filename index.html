@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Portfolio & Templates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyPortfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Design Better. Create Faster.</h1>
+            <p>Hi, I'm a Digital Creator. I share high-quality templates for Notion, Figma, and VN to help you level up your workflow.</p>
+            <a href="#templates" class="btn-primary">Browse Free Templates</a>
+        </div>
+    </header>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am passionate about organizing life and creating beautiful designs. What started as a personal hobby of making Notion dashboards and editing travel vlogs has turned into a library of resources.</p>
+                    <p>My mission is to help you save time so you can focus on creating.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-tag">Notion</div>
+                    <div class="skill-tag">Figma</div>
+                    <div class="skill-tag">VN Editor</div>
+                    <div class="skill-tag">UI/UX</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="templates" class="section">
+        <div class="container">
+            <h2>Free Templates</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="notion">Notion</button>
+                <button class="filter-btn" data-filter="figma">Figma</button>
+                <button class="filter-btn" data-filter="vn">VN Code</button>
+            </div>
+
+            <div class="template-grid">
+                
+                <div class="card" data-category="notion">
+                    <div class="card-image" style="background-color: #e3e3e3;">
+                        <span>Notion Preview</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="category-tag">Notion</span>
+                        <h3>Student Planner Dashboard</h3>
+                        <p>Track assignments and exams effortlessly.</p>
+                        <a href="#" class="btn-secondary">Duplicate</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="vn">
+                    <div class="card-image" style="background-color: #ffcccc;">
+                        <span>VN Preview</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="category-tag">VN</span>
+                        <h3>Cinematic Vlog Filter</h3>
+                        <p>Moody color grading for travel videos.</p>
+                        <a href="#" class="btn-secondary">Get Code</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="figma">
+                    <div class="card-image" style="background-color: #ccdeff;">
+                        <span>Figma Preview</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="category-tag">Figma</span>
+                        <h3>SaaS Landing Page Kit</h3>
+                        <p>Clean UI kit for startup websites.</p>
+                        <a href="#" class="btn-secondary">Download</a>
+                    </div>
+                </div>
+
+                 <div class="card" data-category="notion">
+                    <div class="card-image" style="background-color: #e3e3e3;">
+                        <span>Notion Preview</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="category-tag">Notion</span>
+                        <h3>Content Calendar</h3>
+                        <p>Plan your Instagram and YouTube posts.</p>
+                        <a href="#" class="btn-secondary">Duplicate</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter section">
+        <div class="container">
+            <h2>Join the Creator Club</h2>
+            <p>Get my "Ultimate Productivity Pack" when you join my email list.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fas fa-at"></i></a> </div>
+            <p>&copy; 2024 MyPortfolio. All templates are free for personal use.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
